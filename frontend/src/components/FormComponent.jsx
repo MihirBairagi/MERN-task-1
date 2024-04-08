@@ -9,7 +9,7 @@ const FormComponent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/submit-form', { name, age, email });
+            await axios.post('https://mern-task-1-drab.vercel.app/submit-form', { name, age, email });
             alert('Data submitted successfully!');
         } catch (error) {
             alert('Failed to submit data.');
